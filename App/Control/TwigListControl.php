@@ -6,7 +6,7 @@ class TwigListControl extends Page {
         parent::__construct();
 
         $loader   = new Twig_Loader_Filesystem('App/Resources');
-        $twig     = new Twig_Evironment($loader);
+        $twig     = new Twig_Environment($loader);
         $template = $twig->loadTemplate('list.html');
 
         $replaces = array();
